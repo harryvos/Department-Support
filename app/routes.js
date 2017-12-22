@@ -6,10 +6,6 @@ router.get('/', function (req, res) {
   res.render('index')
 })
 
-router.get('/cs-check', function (req, res) {
-  res.render('/cs-check')
-})
-
 // add your routes here
 
 router.post('/cs-stage', function (req, res) {
