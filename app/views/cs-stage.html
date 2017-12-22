@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/breadcrumb_examples.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/cs-stage" method="get" class="form">
+
+        <h1 class="heading-xlarge">
+          Get help specific to your situation
+        </h1>
+
+        <p>
+          The support provided by GDS is tailored to you and your service. GDS takes a different approach to helping you, according to the stage of work you are in.
+        </p>
+
+        <h2 class="heading-medium">
+          Which stage are you in?
+        </h2>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Which stage are you in?</legend>
+
+            <div class="multiple-choice">
+              <input id="scopingStage" type="radio" name="stage" value="scopingStageTrue">
+              <label for="scopingStage">Scoping</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="prepdiscoStage" type="radio" name="stage" value="prepdiscoStageTrue">
+              <label for="prepdiscoStage">Preparing for Discovery</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="discoStage" type="radio" name="stage" value="discoStageTrue">
+              <label for="discoStage">Discovery</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="alphaStage" type="radio" name="stage" value="alphaStageTrue">
+              <label for="alphaStage">Alpha</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="privatebetaStage" type="radio" name="stage" value="privatebetaStageTrue">
+              <label for="privatebetaStage">Private Beta</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="publicbetaStage" type="radio" name="stage" value="publicbetaStageTrue">
+              <label for="publicbetaStage">Public Beta</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="liveStage" type="radio" name="stage" value="liveStageTrue">
+              <label for="liveStage">Live</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="legacyStage" type="radio" name="stage" value="legacyStageTrue">
+              <label for="legacyStage">Legacy</label>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

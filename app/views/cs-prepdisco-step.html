@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/breadcrumb_examples.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/cs-step" method="get" class="form">
+
+        <h1 class="heading-xlarge">
+          Get help with preparing for Discovery
+        </h1>
+
+        <p>
+          Within each stage of work, there are different areas in which GDS can help you.
+        </p>
+
+        <h2 class="heading-medium">
+          Which step are you working on?
+        </h2>
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Which step are you working on?</legend>
+
+            <div class="multiple-choice">
+              <input id="scopingStage" type="radio" name="step" value="scopingStageTrue">
+              <label for="scopingStage">Scoping</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="intbcStage" type="radio" name="step" value="true">
+              <label for="intbcStage">Internal business case</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="cobcStage" type="radio" name="step" value="true">
+              <label for="cobcStage">Cabinet Office (GDS) business case</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="procdiscoStage" type="radio" name="step" value="true">
+              <label for="procdiscoStage">Procuring a Discovery</label>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
