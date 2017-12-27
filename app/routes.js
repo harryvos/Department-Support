@@ -9,21 +9,29 @@ router.get('/', function (req, res) {
 // add your routes here
 
 router.post('/cs-stage', function (req, res) {
+  // get the answer from the query string (eg. ?over18=false)
+  var civilservant = req.session.data['civilservant']
 
-  // Make a variable and give it the value from 'juggling-balls'
-  var civilServant = req.session.data['cs-check']
-
-  // Check whether the variable matches a condition
-  if (civilServant == "cs"){
-    // Send user to next page
+  if (civilservant === 'true') {
+    // redirect to the relevant page
     res.redirect('/cs-stage')
+  } else {
+    // if over18 is any other value (or is missing) render the page requested
+    res.redirect('non-cs-stage')
   }
-  else {
-    // Send user to ineligible page
-    res.redirect('/non-cs-stage')
-  }
-
 })
 
+router.post('/cs-prepdisco-step', function (req, res) {
+  // get the answer from the query string (eg. ?over18=false)
+  var stage = req.session.data['stage']
+
+  if (stage === 'prepdiscoStageTrue') {
+    // redirect to the relevant page
+    res.redirect('/cs-prepdisco-step')
+  } else {
+    // if over18 is any other value (or is missing) render the page requested
+    res.redirect('content-wip')
+  }
+})
 
 module.exports = router

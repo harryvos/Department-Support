@@ -12,7 +12,7 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <form action="/cs-stage" method="get" class="form">
+      <form action="/cs-stage" method="post" class="form">
 
         <h1 class="heading-xlarge">
           Find out what help GDS can give you
@@ -32,12 +32,12 @@
             <legend class="visuallyhidden">Are you a civil servant in the UK government?</legend>
 
             <div class="multiple-choice">
-              <input id="civilservantTrue" type="radio" name="civilservant" value="cs">
+              <input id="civilservantTrue" type="radio" name="civilservant" value="true">
               <label for="civilservantTrue">Yes</label>
             </div>
 
             <div class="multiple-choice">
-              <input id="civilservantFalse" type="radio" name="civilservant" value="non-cs">
+              <input id="civilservantFalse" type="radio" name="civilservant" value="false">
               <label for="civilservantFalse">No</label>
             </div>
 
