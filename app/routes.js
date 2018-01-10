@@ -34,4 +34,17 @@ router.post('/cs-prepdisco-step', function (req, res) {
   }
 })
 
+router.post('/scoping', function (req, res) {
+  // get the answer from the query string (eg. ?over18=false)
+  var step = req.session.data['step']
+
+  if (step === 'scopingStageTrue') {
+    // redirect to the relevant page
+    res.redirect('/scoping')
+  } else {
+    // if over18 is any other value (or is missing) render the page requested
+    res.redirect('content-wip')
+  }
+})
+
 module.exports = router

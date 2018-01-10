@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="en"><![endif]--><!--[if gt IE 8]><!--><html lang="en">
+<!--<![endif]-->
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Scoping - Get help with your government service - GOV.UK</title>
+
+    <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-2775f99eaec64ff8121bfbfb3eb67b0c2b4b7c3fc78d25da30e12db2a09d30d6.css" crossorigin="anonymous" integrity="sha256-J3X5nq7GT/gSG/v7PrZ7DCtLfD/HjSXaMOEtsqCdMNY=">
+<!--<![endif]-->
+    <!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie6-5bb08c355a12ac38b0ac9d2446da122ec0f81c78e02dcd2a98766f53c23793c8.css" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie7-be1ea757827710f20eae59ae3ebfd172b7dbeabb171a79945ba610947eebb3cc.css" /><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/govuk-template-ie8-5ab4d0c7b42f2bf10f8c7aadf331a11f7399be832b0ee2c68c94071195a1e36e.css" /><![endif]-->
+    <link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/static/govuk-template-print-1076519521c2fffbbf75ab3b0d3b32ee2d96ac7e9778f1cdfac1771eefd1a1c0.css" crossorigin="anonymous" integrity="sha256-EHZRlSHC//u/das7DTsy7i2WrH6XePHN+sF3Hu/RocA=">
+
+    <!--[if IE 8]><link rel="stylesheet" media="all" href="https://assets.publishing.service.gov.uk/static/fonts-ie8-f5e3c18a96ecb0f37246556a27330202d6e18feffa05a3b67825024609629ac8.css" /><![endif]-->
+    <!--[if gte IE 9]><!--><link rel="stylesheet" media="all" href="https://assets.publishing.service.gov.uk/static/fonts-5ff8c53913434afd0072a480d7cfca67cace4c8d03f6ef96b78a4455728ce745.css" crossorigin="anonymous" integrity="sha256-X/jFORNDSv0AcqSA18/KZ8rOTI0D9u+Wt4pEVXKM50U=">
+<!--<![endif]-->
+    <!--[if lt IE 9]><script src="https://assets.publishing.service.gov.uk/static/ie-d31395a9030b68584b0a191af4b68cb7bef1bb6024898c719fb61241f9e18d0e.js" crossorigin="anonymous" integrity="sha256-0xOVqQMLaFhLChka9LaMt77xu2AkiYxxn7YSQfnhjQ4="></script><![endif]-->
+
+    <link rel="shortcut icon" href="https://assets.publishing.service.gov.uk/static/favicon-8d811b8c3badbc0b0e2f6e25d3660a96cc0cca7993e6f32e98785f205fc40907.ico" type="image/x-icon">
+    <link rel="mask-icon" href="https://assets.publishing.service.gov.uk/static/gov.uk_logotype_crown-de738c3fcce8ce2a91b67e89787090dc24a5cda0275ab6b75f6226c5b9619d3d.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-180x180-ea1cbb1cbbeddfff275dfa6e8e46b84cd530892df79dc4882a8f99b802b49a90.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-167x167-181e404a50c572923285fb83f0fbd78da6b4e38e3ce52f8e6b8e29da8586450a.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-152x152-02457fcdcee8d309276305af2233d41bfb8fd055e855727d355e61bce7ffa9bb.png">
+    <link rel="apple-touch-icon" href="https://assets.publishing.service.gov.uk/static/apple-touch-icon-a318f305290c523aed80082456175b46c95350c0eeac93f42e78a71c7a55544e.png">
+
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://assets.publishing.service.gov.uk/static/opengraph-image-a1f7d89ffd0782738b1aeb0da37842d8bd0addbd724b8e58c3edbc7287cc11de.png">
+
+      <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-6b3e83fc543eefbe0fbd56879eab276a1fabcb553d2d2e03cfca2d96fb6a5e34.css" crossorigin="anonymous" integrity="sha256-az6D/FQ+774PvVaHnqsnah+ry1U9LS4Dz8otlvtqXjQ=">
+<!--<![endif]-->
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie6-85b0cf27c8b6bd50b0239fc4a4814c8a20f09c96a19515366b598e401708e11a.css" /><script>var ieVersion = 6;</script><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie7-32ffd719c7b62d7906a18f890d40cd011121f4156bae53e1227a54e35f5b6f1c.css" /><script>var ieVersion = 7;</script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-ie8-deb1350e4840e81ec071725509330a3df6cd1dda2a94c3470455fc40891ae58d.css" /><script>var ieVersion = 8;</script><![endif]-->
+
+<link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/static/core-layout-print-774f7d274d27182a629690248f3d33de4aab74e12244f02483d1343c5f7f7265.css" crossorigin="anonymous" integrity="sha256-d099J00nGCpilpAkjz0z3kqrdOEiRPAkg9E0PF9/cmU=">
+
+
+  <!--[if gt IE 8]><!--><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/service-manual-frontend/screen-a02278349ca0454b0282c1486ed37ca1a186de4803168b0591749114b44afa44.css">
+<!--<![endif]--><link rel="stylesheet" media="print" href="https://assets.publishing.service.gov.uk/service-manual-frontend/print-4db75f072f0c1cdfc37105821a8c2d2749d19f642199913c1b62955b323ab2fd.css">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="XF8vu1HVdSpdYC66dgnwPrQxzcewmjQ/1MLFuXocpgkrRoxkA+vfpI71MlXGy+uwedvhjKG2eFlMqHzbUm8iHw==">
+<meta name="govuk:format" content="service_manual_guide">
+<meta name="govuk:schema-name" content="service_manual_guide">
+<meta name="govuk:analytics:organisations" content="&lt;OT1056&gt;">
+<meta name="govuk:user-journey-stage" content="thing">
+<meta name="govuk:navigation-document-type" content="other">
+<meta name="govuk:content-has-history" content="true">
+<meta name="description" content="How GDS can help you scope a government project for a service or technology.">
+<!--[if IE 6]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/service-manual-frontend/screen-ie6-c11228866d12ca7190e9d28c41025396e0d2b8ebcdcce7440be4de069da52384.css" /><script>var ieVersion = 6;</script><![endif]--><!--[if IE 7]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/service-manual-frontend/screen-ie7-9dc2886a3c60c5d7ad4a17fe5492d8e01132321f2d7f95302a07b3b0dbf99eb4.css" /><script>var ieVersion = 7;</script><![endif]--><!--[if IE 8]><link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/service-manual-frontend/screen-ie8-db56c5616e3df0fd03eb7b46363a3ba411b60e3a31d497b2c7005d832538ed62.css" /><script>var ieVersion = 8;</script><![endif]--><meta name="govuk:rendering-application" content="service-manual-frontend">
+</head>
+
+  <body>
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#content" class="skiplink">Skip to main content</a>
+      </div>
+    </div>
+
+    <div id="global-cookie-message">
+        <p>GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a></p>
+    </div>
+
+    <div id="wrapper" class="direction-ltr">
+    <main role="main" id="content" lang="en">
+      <div class="phase-banner">
+        <p>
+          <strong class="phase-tag">ALPHA</strong>
+          <span>This is a prototype.</span>
+        </p>
+      </div>
+      
+<!-- Page title and contact -->
+<div class="grid-row">
+
+  <div class="column-two-thirds">
+    <div class="page-header">
+      <p class="page-header__context">Help with your government service</p>
+      <h1 class="page-header__title">
+        Scoping
+      </h1>
+    </div>
+  </div>
+
+</div>
+
+<!-- Metadata-->
+<div class="grid-row">
+  <div class="column-two-thirds">
+
+    <div class="metadata">
+      <dl>
+          <dt>Published by:</dt>
+            <dd>
+              <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a>
+            </dd>
+        <dt>Last updated:</dt>
+        <dd>
+          Today
+        </dd>
+      </dl>
+    </div>
+
+  </div>
+</div>
+
+<div class="grid-row" data-module="highlight-active-section-heading">
+  <div class="column-third">
+    <form action="/" method="post" class="form">
+
+    <!--  Page contents -->
+    <div class="page-contents js-page-contents js-stick-at-top-when-scrolling js-sticky-resize">
+      <h2 class="page-contents__title">Page contents:</h2>
+      <ul class="page-contents__list">
+          <li><a href="#what-to-find-out-in-discovery">What to find out in discovery</a></li>
+          <li><a href="#related-guides">Related guides</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="column-two-thirds">
+
+    <div class="govspeak-wrapper">
+      
+<div class="govuk-govspeak ">
+  <p>Hello</p>
+
+<p>This part of your project is called the discovery phase.</p>
+
+<p>Before starting discovery, you must <a href="/service-manual/agile-delivery/spend-controls-check-if-you-need-approval-to-spend-money-on-a-service">check if you need spend controls approval to spend money</a> on your service.</p>
+
+<p>You shouldn’t start building your service in discovery.</p>
+
+<h2 id="what-to-find-out-in-discovery">What to find out in discovery</h2>
+
+<p>In the discovery phase you need to understand and map out the user journey.</p>
+
+<p>You should find out:</p>
+
+<ul>
+  <li>who your users are</li>
+  <li>your users’ needs and how you’re meeting them, or any needs you’re not meeting</li>
+  <li>which services currently meet your users’ needs and whether they’re government services or private sector</li>
+  <li>how you’d start developing a new service if your discovery finds there’s a user need for one</li>
+  <li>
+<a href="/service-manual/the-team/set-up-a-service-team#the-service-team-you-need-in-each-phase">the people you need on your team</a> for the alpha phase</li>
+  <li>what the user journey for someone using your proposed service might look like</li>
+  <li>what to <a href="/service-manual/design/naming-your-service">name your proposed service</a>
+</li>
+  <li>how to meet <a href="/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction#meeting-government-accessibility-requirements">government accessibility requirements</a>
+</li>
+  <li>how you might build a technical solution given the constraints of your organisation’s legacy systems</li>
+  <li>the policy that relates to your service and how it might prevent you from delivering a good service to your users</li>
+</ul>
+
+<h2 id="what-to-do-in-discovery">What to do in discovery</h2>
+
+<p>To get the information you need in discovery, you can:</p>
+
+<ul>
+  <li><a href="/service-manual/user-research/user-research-in-discovery">carry out user research</a></li>
+  <li>analyse policies, laws and business needs</li>
+</ul>
+
+<p>You shouldn’t use discovery to design a service to work around existing processes in your organisation. Use it to find out whether you can build a service that meets user needs.</p>
+
+<h2 id="the-team-you-need">The team you need</h2>
+
+<p>Find out <a href="/service-manual/the-team/set-up-a-service-team#the-service-team-you-need-in-each-phase">how to set up a service team at each phase</a>.</p>
+
+<h2 id="how-long-discovery-takes">How long discovery takes</h2>
+
+<p>Every service is different, but depending on the size and complexity of your service, your discovery should usually take between 4 and 8 weeks.</p>
+
+<p>During the final week you should:</p>
+
+<ul>
+  <li>make a broad scope for your project</li>
+  <li><a href="/service-manual/agile-delivery/writing-user-stories">write user stories</a></li>
+  <li>decide the features your ‘minimum viable product’ must have</li>
+</ul>
+
+<p>A minimum viable product is a version of your service that has just enough features for you to test it with users and check whether those features work.</p>
+
+<h2 id="how-you-know-discovery-is-finished">How you know discovery is finished</h2>
+
+<p>Discovery is finished when you know:</p>
+
+<ul>
+  <li>the scope of the service you want to build</li>
+  <li>whether to move into the alpha phase</li>
+  <li>the team of people you need if you do move on to alpha</li>
+  <li>that senior stakeholders want to begin building the service and understand your plans</li>
+  <li>how you’ll <a href="/service-manual/measuring-success/using-data-to-improve-your-service-an-introduction#measuring-from-the-start">measure success</a> and what a successful service would look like</li>
+  <li>any related services that exist to meet the user need and whether they’re run by government or third parties - your service shouldn’t be duplicating another government service and it should only meet needs government is uniquely positioned to deliver</li>
+  <li>how <a rel="external" href="https://accessibility.blog.gov.uk/2016/05/16/consider-the-range-of-people-that-will-use-your-product-or-service/">impairments might affect your users</a> - for example, visual, hearing, motor and cognitive (memory and thinking) impairments</li>
+  <li>how many of your users need <a href="/service-manual/helping-people-to-use-your-service/assisted-digital-support-introduction">assisted digital support</a> and what their needs are</li>
+</ul>
+
+<p>You should have:</p>
+
+<ul>
+  <li>a prioritised list of <a href="/service-manual/user-research/start-by-learning-user-needs">user needs</a>
+</li>
+  <li>a prioritised list of <a href="/service-manual/agile-delivery/writing-user-stories">user stories</a>
+</li>
+  <li>a list of stakeholders, and information you’ve got from them about existing services</li>
+</ul>
+
+<h2 id="moving-on-to-the-alpha-phase">Moving on to the alpha phase</h2>
+
+<p>You should move on to the alpha phase if your discovery findings show:</p>
+
+<ul>
+  <li>you can build a service that better meets user needs compared to what’s currently available</li>
+  <li>the service you’re building will be better value for money</li>
+</ul>
+
+<h2 id="stopping-after-discovery">Stopping after discovery</h2>
+
+<p>Your findings may show it’s best to stop developing your service, for example if you discover:</p>
+
+<ul>
+  <li>there’s no user need for the service you planned to build or for an online service</li>
+  <li>user needs are already being met by another service</li>
+  <li>technology or policy constraints mean you won’t be able to build a service that meets the user needs you’ve found</li>
+  <li>it’s not cost-effective to develop the service</li>
+</ul>
+
+<p>It’s not a failure to stop developing a service after the discovery phase if your findings show that’s the best thing to do.</p>
+
+<h2 id="related-guides">Related guides</h2>
+
+<p>You may also find these guides useful:</p>
+
+<ul>
+  <li><a href="/service-manual/agile-delivery/how-the-alpha-phase-works">How the alpha phase works</a></li>
+  <li><a href="/service-manual/agile-delivery/how-the-beta-phase-works">How the beta phase works</a></li>
+  <li><a href="/service-manual/agile-delivery/how-the-live-phase-works">How the live phase works</a></li>
+  <li><a href="/service-manual/agile-delivery/retiring-your-service">Retiring your service</a></li>
+</ul>
+
+</div>
+
+    </div>
+
+    <div class="change-history" data-module="toggle">
+      <div class="change-history__latest-change">
+        <dl>
+          <dt>Published by:</dt>
+            <dd>
+              <a href="/service-manual/communities/agile-delivery-community">Agile delivery community</a>
+            </dd>
+          <dt>Last update:</dt>
+          <dd>
+            <time datetime="2017-10-03T10:59:27+00:00" class="timestamp"> 3 October 2017</time>
+<p class="change-history__summary">
+  Added guidance on how to meet government accessibility requirements in discovery.
+</p>
+
+          </dd>
+        </dl>
+      </div>
+      <p><a href="#full-history" data-controls="full-history" data-expanded="false" role="button" aria-controls="full-history" aria-expanded="false">+ Show all page updates (2)</a></p>
+      <ol id="full-history" class="change-history__past js-hidden" aria-live="polite" role="region">
+        <li>
+          <time datetime="2016-08-04T12:57:52+00:00" class="timestamp"> 4 August 2016</time>
+<p class="change-history__summary">
+  Guidance first published
+</p>
+
+        </li>
+      </ol>
+    </div>
+
+  </div>
+</form>
+</div>
+
+    </main>
+
+    <div class="full-page-width-wrapper">
+  <div class="improve-this-page" data-module="improve-this-page">
+    <div class="improve-this-page__prompt js-prompt clearfix" tabindex="-1">
+      <h3 class="improve-this-page__is-useful-question">Is this page useful?</h3>
+      <a class="improve-this-page__page-is-useful-button js-page-is-useful" data-track-category="manualFeedbackForm" data-track-action="ffYesClick" href="/contact/govuk">
+        Yes <span class="visually-hidden"> this page is useful</span>
+</a>      <a class="js-page-is-not-useful" data-track-category="manualFeedbackForm" data-track-action="ffNoClick" aria-controls="improveThisPageForm" aria-expanded="false" href="/contact/govuk">
+        No <span class="visually-hidden"> this page is not useful</span>
+</a>      <a class="js-something-is-wrong improve-this-page__anything-wrong" data-track-category="manualFeedbackForm" data-track-action="ffWrongClick" aria-controls="improveThisPageForm" aria-expanded="false" href="/contact/govuk">
+        Is there anything wrong with this page?
+</a>    </div>
+    <div id="improveThisPageForm" class="improve-this-page__form js-feedback-form js-hidden" data-track-category="manualFeedbackForm" data-track-action="ffFormSubmit">
+      <a href="#" class="improve-this-page__close js-close-feedback-form" aria-controls="improveThisPageForm" aria-expanded="true">Close</a>
+      <div class="grid-row">
+        <div class="column-two-thirds">
+          <div class="js-errors"></div>
+          <form>
+            <input type="hidden" name="url" value="https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works">
+            <input type="hidden" name="user_agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36">
+            <div class="form-group">
+              <label class="form-label-bold" for="description-field">
+                How should we improve this page?
+              </label>
+              <textarea id="description-field" class="form-control" name="description" rows="5" aria-required="true"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="name-field">
+                Name (optional)
+                <span class="form-hint">Include your name and email address if you'd like us to get back to you.</span>
+              </label>
+              <input id="name-field" class="form-control" type="text" name="name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email-field">Email (optional)</label>
+              <input id="email-field" class="form-control" type="text" name="email">
+            </div>
+            <div>
+              <input class="button" type="submit" value="Send message">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+      <div class="footer-wrapper">
+        
+
+        <div class="footer-meta">
+          <div class="footer-meta-inner">
+              <h2 class="visuallyhidden">Support links</h2>
+<ul>
+  <li><a href="/help">Help</a></li>
+  <li><a href="/help/cookies">Cookies</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help/terms-conditions">Terms and conditions</a></li>
+  <li><a href="/cymraeg" lang="cy" hreflang="cy">Rhestr o Wasanaethau Cymraeg</a></li>
+  <li>Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a>
+</li>
+</ul>
+
+
+
+            <div class="open-government-licence">
+              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="https://assets.publishing.service.gov.uk/static/govuk-template-d4ba5ab8f60c9df5c733e7d3c7c469ff93dc6b64d2b2a8feb94afa8f77c66193.js" crossorigin="anonymous" integrity="sha256-1LpauPYMnfXHM+fTx8Rp/5Pca2TSsqj+uUr6j3fGYZM="></script>
+
+      <script src="https://assets.publishing.service.gov.uk/static/libs/jquery/jquery-1.12.4-395e36e8b50840dbe9f754bd87c5098de66e33f81061d9452420dbdb9ee760f1.js" crossorigin="anonymous" integrity="sha256-OV426LUIQNvp91S9h8UJjeZuM/gQYdlFJCDb257nYPE="></script>
+<script src="https://assets.publishing.service.gov.uk/static/header-footer-only-f064d14bd8bdbd0247972b404350af141b2daef30ee6570edc003e15d5aea5e2.js" crossorigin="anonymous" integrity="sha256-8GTRS9i9vQJHlytAQ1CvFBstrvMO5lcO3AA+FdWupeI="></script>
+<script src="https://assets.publishing.service.gov.uk/static/surveys-13fa50f3f9136ae5021974b12f83c0e6379bfd0f0053eacb213e8c4acd9ecaa0.js" crossorigin="anonymous" integrity="sha256-E/pQ8/kTauUCGXSxL4PA5jeb/Q8AU+rLIT6MSs2eyqA="></script>
+
+
+
+    <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+  <script src="https://assets.publishing.service.gov.uk/service-manual-frontend/application-4316f9d34667897560276221c7e712da80ae88cc0e8c91502b559066abf7e1b6.js"></script>
+</body>
+</html>
+
+{% endblock %}
