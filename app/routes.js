@@ -28,11 +28,18 @@ router.post('/cs-prepdisco-step', function (req, res) {
   if (stage === 'prepdiscoStageTrue') {
     // redirect to the relevant page
     res.redirect('/cs-prepdisco-step')
-  } else {
+  }
+  
+  if (stage === 'alphaStageTrue') {
+    // redirect to the relevant page
+    res.redirect('/alpha')
+  }
+
+  else {
     // if over18 is any other value (or is missing) render the page requested
     res.redirect('content-wip')
   }
-})
+  })
 
 router.post('/scoping', function (req, res) {
   // get the answer from the query string (eg. ?over18=false)
